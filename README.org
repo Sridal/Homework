@@ -19,9 +19,9 @@ printf("Result:%d",r);
 return 0;
 }
 #+end_src
-+ Comments
-  Line Count(10)
-  A simple program to add two number and find the product.
+*** Comments
+  + Line Count(10)
+  + A simple program to add two number and find the product.
 
 ** 1: Function with no return value and without argument
 #+begin_src C #+PROPERTY: header-args :tangle function_1.c
@@ -40,11 +40,11 @@ r=a+b;
 printf("Result:%d",r);
 }
 #+end_src
-+ Comments
-  Line Count(14)
-  It is Easiest to write since systax is really similae to a code without function.
-  Very similar to Example function.
-  Additional definition for the function you are about to use is required.
+*** Comments
+  + Line Count(14)
+  + It is Easiest to write since systax is really similae to a code without function.
+  + Very similar to Example function.
+  + Additional definition for the function you are about to use is required.
 
 
 
@@ -67,10 +67,10 @@ r=a+b;
 return r;
 }
 #+end_src
-+ Comments
-  Line Count(16)
-  Harder to write since the code progresses procedurally from line 58 to 61 & 52 to 54.
-  Additional definition about the function you are about to use is required.
+*** Comments
+  + Line Count(16)
+  + Harder to write since the code progresses procedurally from line 58 to 61 & 52 to 54.
+  + Additional definition about the function you are about to use is required.
 
 ** 3: Function without return value and with arguments
 #+begin_src C #+PROPERTY: header-args :tangle function_3.c
@@ -91,10 +91,10 @@ printf("Result:%d",r);
 return 0;
 }
 #+end_src
-+ Comments
-  Line Count(16)
-  Easier to write than "2:"; Since, code is somewhat procedural.
-  Additional definition about the function you are about to use is required along with definition for the "data types" you are about to use.
+*** Comments
+  + Line Count(16)
+  + Easier to write than "2:"; Since, code is somewhat procedural.
+  + Additional definition about the function you are about to use is required along with definition for the "data types" you are about to use.
 
 ** 4: Function with return value with arguments
 #+begin_src C #+PROPERTY: header-args :tangle function_4.c
@@ -115,7 +115,7 @@ r=a+b;
 return r;
 }
 #+end_src
-+ Comments
-  Line Count(16)
-  Somewhat easier to write and easier to understand as computation being separated to a different code block.
-  Additional definition about the function you are about to use is required along with definition for the "data types" you are about to use.
+*** Comments
+  + Line Count(16)
+  + Somewhat easier to write and easier to understand as computation being separated to a different code block.
+  + Additional definition about the function you are about to use is required along with definition for the "data types" you are about to use.
