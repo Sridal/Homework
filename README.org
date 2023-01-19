@@ -1,29 +1,69 @@
 #+title: Function
 #+DESCRIPTION: This Document shows all the possible types of user defined function in C/C++
 #+AUTHOR: Shrijan Dahal
-* Function
 Function is a self contained program for a block of code that perform some specific and well defined task.
+eg: printf,scanf,etc.
 
+**** Advantages of function
++ Faster program Development
++ Reduces program complexity
++ Introduces "Reuseability" to blocks of code
++ Debugging becomes easier
+**** Disadvantages of Function
++ The syntax must be same while declaring & calling the function, any mismatch results in complexity while Debugging.
+  Eg:
+#+begin_src C
+#include<stdio.h>
+int equal(int,int);
+void main(){
+    int a=3,b=4;
+    equal(a,b);
+}
+equal(int a,int b){
+a=b;
+b=a;
+}
+#+end_src
+* Types of Function
+** Library Function or Inbuilt Function
++ They are predefined function.
++ They can be used by including header files like stdio.h,conio.h,stdlib.h.
++ They are /usr/include/ directory in a Linux System.
+  Eg:
+  #+begin_src C
+#include<stdio.h>
+void main(){
+    printf("Hello World");
+}
+  #+end_src
+** User defined Function
++ It is declared,defined & used by this user.
++ It contains the following types of components
+#+begin_src
+a) Declaration
+b) Calling
+c) Definition
+d) Returning Statement
+#+end_src
 
-
-** Example Function
+*** Example Function
 #+begin_src C #+PROPERTY: header-args :tangle function.c
 #include<stdio.h>
 #include<conio.h>
 int main(){
-int a,b,r;
-printf("Enter two Numbers:");
-scanf("%d%d",&a,&b);
-r=a+b;
-printf("Result:%d",r);
-return 0;
+    int a,b,r;
+    printf("Enter two Numbers:");
+    scanf("%d%d",&a,&b);
+    r=a+b;
+    printf("Result:%d",r);
+    return 0;
 }
 #+end_src
-*** Comments
+**** Comments
   + Line Count(10)
   + A simple program to add two number and find the product.
 
-** 1: Function with no return value and without argument
+*** 1: Function with no return value and without argument
 #+begin_src C #+PROPERTY: header-args :tangle function_1.c
 #include<stdio.h>
 #include<conio.h>
@@ -40,7 +80,7 @@ r=a+b;
 printf("Result:%d",r);
 }
 #+end_src
-*** Comments
+**** Comments
   + Line Count(14)
   + It is Easiest to write since systax is really similae to a code without function.
   + Very similar to Example function.
@@ -48,7 +88,7 @@ printf("Result:%d",r);
 
 
 
-** 2: Function with return value and without arguments
+*** 2: Function with return value and without arguments
 #+begin_src C #+PROPERTY: header-args :tangle function_2.c
 #include<stdio.h>
 #include<conio.h>
@@ -67,12 +107,12 @@ r=a+b;
 return r;
 }
 #+end_src
-*** Comments
+**** Comments
   + Line Count(16)
   + Harder to write since the code progresses procedurally from line 58 to 61 & 52 to 54.
   + Additional definition about the function you are about to use is required.
 
-** 3: Function without return value and with arguments
+*** 3: Function without return value and with arguments
 #+begin_src C #+PROPERTY: header-args :tangle function_3.c
 #include<stdio.h>
 #include<conio.h>
@@ -91,12 +131,12 @@ printf("Result:%d",r);
 return 0;
 }
 #+end_src
-*** Comments
+**** Comments
   + Line Count(16)
   + Easier to write than "2:"; Since, code is somewhat procedural.
   + Additional definition about the function you are about to use is required along with definition for the "data types" you are about to use.
 
-** 4: Function with return value with arguments
+*** 4: Function with return value with arguments
 #+begin_src C #+PROPERTY: header-args :tangle function_4.c
 #include<stdio.h>
 #include<conio.h>
@@ -115,7 +155,7 @@ r=a+b;
 return r;
 }
 #+end_src
-*** Comments
+**** Comments
   + Line Count(16)
   + Somewhat easier to write and easier to understand as computation being separated to a different code block.
   + Additional definition about the function you are about to use is required along with definition for the "data types" you are about to use.
